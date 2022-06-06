@@ -1,0 +1,26 @@
+[
+    {
+        "company":" High school Dumitru Motoc",
+        "img":"Motoc-scaled.jpg",
+        "title":" High school",
+        "description":"Dumitru Moțoc Technical College of Food Industry is a high school with a tradition in the food industry, founded in 1947 by Professor Dr. Dumitru Moțoc.",
+        "course":"2009 - 2013"
+        
+    },
+    {
+        "company":"Wantsome",
+        "img":"/wantsome.jpg",
+        "title":"Itroduction to programming",
+        "description":"Introduction to the world of programming in which you discover the most commonly used programming languages as well as how a program runs.",
+        "course":"Nov 2021 - Dec 2022"
+        
+    },
+{
+    "company":"Wantsome",
+    "img":"/wantsome.jpg",
+    "title":"Programare Front-End",
+    "description":"HTML , CSS, SCSS , JAVASCRIPT , GIT, GHITHUB",
+    "course":"Dec 2021 - May 2022"
+    
+}
+]
