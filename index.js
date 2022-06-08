@@ -1,5 +1,5 @@
    // write your solution here
-   fetch("/data.json")
+   fetch("data.json")
    .then(response => response.json())
    .then(data =>{
        window.mockyData=data
@@ -91,7 +91,7 @@ Email.send({
 
 
 // Creati study
-fetch("/dataStudy.json")
+fetch("dataStudy.json")
 .then(response => response.json())
 .then(data =>{
     window.mockyData=data
