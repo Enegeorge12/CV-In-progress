@@ -17,6 +17,7 @@
       let img=document.createElement("img")
       img.src=user.img
       img.setAttribute("width","80%")
+      img.style.borderRadius="50%";
 
 
       let name=document.createElement("h1")
@@ -85,10 +86,18 @@ Email.send({
     Subject : "New Contact form",
     Body : "And this is the body"
 }).then(
-  message => alert(message)
+  // message => alert(message)
 )
 }
+// Get the modal
+var modal = document.getElementById('id01');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // Creati study
 fetch("dataStudy.json")
@@ -114,7 +123,7 @@ function creatStudy(){
         company.textContent=user.company
         let img=document.createElement("img")
         img.setAttribute("width" ,"80px")
-        img.src="wantsome.jpg"
+        img.src=user.img;
         let description= document.createElement("p")
         description.textContent="Description: "+user.description
         description.style.paddingBottom="20px"

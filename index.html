@@ -7,15 +7,13 @@
     <title>Ene George CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js" defer></script>
-    
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
 </head>
 <body>
- 
     <div class="container">
         <div class="left">
-           
             <div class="contact"></div>
             <div class="skils">
                 <h3>Skills:</h3>
@@ -31,46 +29,51 @@
                 <progress max="100" value="90">Html</progress>
          </div>
         </div>
+
         <div class="right">
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
-                <button class="tablinks" onclick="openTab(event, 'study')">Study</button>
-                <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+                <button class="tablinks" onclick="openTab(event, 'Experience')"><i class="fa fa-briefcase"></i>Experience</button>
+                <button class="tablinks" onclick="openTab(event, 'study')"><i class="fa fa-mortar-board"></i>Study</button>
+                <button class="tablinks" onclick="openTab(event, 'Contact')"><i class="fa fa-envelope"></i></i>Contact</button>
+                <button class="tablinks" onclick="openTab(event, 'Project')"><i class="fa fa-bar-chart-o"></i>Project</i></button>
               </div>
               
-              <div id="Experience" class="tabcontent">
-                <h3>Experience</h3>
-                <p>London is the capital city of England.</p>
-              </div>
-              
+              <div id="Experience" class="tabcontent"></div>
               <div id="study" class="tabcontent"></div>
-              
+              <div id="Project" class="tabcontent"></div>
               <div id="Contact" class="tabcontent">
-                <h3>Contact</h3>
+                
                 <section>
                     <form onsubmit=" sendEmail(); reset();return false;">
                         <div class="field">
                             <label >Name:</label>
-                             <input type="text" name="Nmae" placeholder="Name..." id="">
+                             <input type="text" name="name" placeholder="Name" id="name">
                         </div>
                         <div class="field">
                             <label >Email:</label>
-                            <input type="text" name="Nmae" placeholder="Email" id="email">
+                            <input type="text" name="name" placeholder="Email" id="email">
                         </div>
                         <div class="field">
                             <label >Description:</label>
-                             <textarea placeholder="text...." name="description" id="description" cols="21" rows="3"></textarea>
+                             <textarea placeholder="Text Me...." name="description" id="description" cols="21" rows="3"></textarea>
                         </div>
-                        <button type="submit" >Send</button>        
+                        <button type="submit"onclick="document.getElementById('id01').style.display='block'" >Send</button>        
                     </form>
                 </section>
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content" >
+                      <div class="containerModal">
+                        <h1>Your message has been received!</h1>
+                        <p>Thank you!</p>
+                      </div>
+                    </form>
+                  </div>
               </div>
-        
         </div>
     </div>
     <i class="fas fa-clock"></i>
-
     <a href="https://wa.me/+40767316198" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 </body>
 </html>
