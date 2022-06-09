@@ -26,27 +26,30 @@
       title.textContent=user.title
 
       let email=document.createElement("div")
-      email.textContent="Email: "+user.email
+      email.innerHTML=`<i class="fa fa-envelope"></i>`+"Email: "+user.email
       
       let phone=document.createElement("div")
-      phone.textContent="Phone: "+user.phone
+      phone.innerHTML=`<i class="fa fa-phone"></i>`+"Phone:"+`<a href="tel:+40767316198">${user.phone}</a>`
+
+      
 
       let country=document.createElement("div")
-      country.textContent="Country: "+user.country
+      country.innerHTML=`<i class="fa fa-building"></i>`+"Country: "+user.country
 
       let city=document.createElement("div")
-      city.textContent="City: "+user.city
+      city.innerHTML=`<i class="fa fa-building"></i>`+"City: "+user.city
 
      let git=document.createElement("div")
-     git.innerHTML=`<div>GitHub: 
+     git.innerHTML=`<i class="fa fa-github"></i><div>GitHub: 
      <a href="https://github.com/Enegeorge12">https://github.com/Enegeorge12</a>
      </div>`
      
      let linkedin=document.createElement("div");
      
-     linkedin.innerHTML=` <div> Linkedin: 
-     <a href="https://www.linkedin.com/in/enegeorge/">https://www.linkedin.com/in/enegeorge/ </a>
+     linkedin.innerHTML=`<i class="fa fa-linkedin-square"></i> <div>Linkedin: 
+     <a href="https://www.linkedin.com/in/enegeorge/">https://www.linkedin.com/in/enegeorge/</a>
      </div`
+     
      
      profil.appendChild(sectionHero)
      sectionHero.appendChild(img)
@@ -74,23 +77,10 @@
     document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
   }
+ 
 
-
-function sendEmail(){
-Email.send({
-    Host : "smtp.gmail.com",
-    Username : "ene@gmail.com",
-    Password : "dkovydiplcwolvzu",
-    To : 'ene.2456@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact form",
-    Body : "And this is the body"
-}).then(
-  // message => alert(message)
-)
-}
 // Get the modal
-var modal = document.getElementById('id01');
+let modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

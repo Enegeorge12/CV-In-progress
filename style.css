@@ -21,7 +21,7 @@ body {
   gap: 20px;
 }
 
-.container .left {
+.container .leftContainer {
   background-color: cadetblue;
   width: 25%;
   display: -webkit-box;
@@ -36,7 +36,7 @@ body {
   padding: 10px;
 }
 
-.container .left .hero {
+.container .leftContainer .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +52,7 @@ body {
           align-items: center;
 }
 
-.container .left .contact {
+.container .leftContainer .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,17 +66,17 @@ body {
   margin-bottom: 20px;
 }
 
-.container .left .contact a {
-  margin-left: 10px;
+.container .leftContainer .contact a {
+  margin-left: 5px;
   text-decoration: none;
   color: black;
 }
 
-.container .left .contact a:hover {
+.container .leftContainer .contact a:hover {
   text-decoration: underline;
 }
 
-.container .left .contact div {
+.container .leftContainer .contact div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +88,7 @@ body {
       flex-wrap: nowrap;
 }
 
-.container .left .skils {
+.container .leftContainer .skils {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,16 +98,180 @@ body {
           flex-direction: column;
 }
 
-.container .left progress {
+.container .leftContainer progress {
   width: 100%;
+}
+
+.container #Project li {
+  list-style: none;
+  position: relative;
+  left: 30px;
+}
+
+.container #Project p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #Project p img {
+  margin-left: 20px;
+}
+
+.container .desktopContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .desktopContainer .desktop {
+  border: 10px solid black;
+  height: auto;
+  border-radius: 20px;
+  width: 90%;
+}
+
+.container .desktopContainer .desktop i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+.container .desktopContainer .desktop img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container .desktopContainer .desktopLeg {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .desktopContainer .desktopLeg .leg1 {
+  width: 50px;
+  height: 100px;
+  background-color: black;
+}
+
+.container .desktopContainer .desktopLeg .leg2 {
+  background-color: black;
+  width: 350px;
+  height: 20px;
+}
+
+.container .mobileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.container .mobileContainer .left {
+  width: 50%;
+}
+
+.container .mobileContainer .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .mobile {
+  border: 10px solid black;
+  border-radius: 20px;
+  width: 35%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.container .mobile .mobileCam {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  border-radius: 60%;
+}
+
+.container .mobile img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .container .right {
   width: 75%;
 }
 
-.container .right h3 {
+.container .right .project {
+  margin-bottom: 100px;
+}
+
+.container .right h1 {
   text-align: center;
+}
+
+.container .right ul {
+  padding: 0px;
 }
 
 .container .right .title-company {
@@ -154,7 +318,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
+  width: 40%;
+}
+
+.container .right form .field:first-child {
+  margin-top: 30px;
 }
 
 .container .right form .field input {
@@ -162,16 +330,29 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid black;
+  width: 50%;
 }
 
 .container .right form .field textarea {
   background: transparent;
   border: none;
   border-bottom: 1px solid black;
+  width: 50%;
 }
 
-.container .right form .field button {
-  margin-bottom: 10px !important;
+button[type="submit"] {
+  border: none;
+  background-color: cadetblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+button[type="submit"]:hover {
+  letter-spacing: 0.35em;
 }
 
 button {
@@ -184,7 +365,7 @@ button {
           flex-direction: row;
 }
 
-button .fa {
+.fa {
   margin-right: 5px;
 }
 
@@ -200,6 +381,7 @@ button .fa {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 /* Style the buttons inside the tab */
@@ -251,6 +433,7 @@ button .fa {
 
 .whatsapp-icon {
   margin-top: 16px;
+  margin-left: 5px;
 }
 
 /* Add a color to the delete button */
@@ -262,22 +445,6 @@ button .fa {
 .containerModal {
   padding: 16px;
   text-align: center;
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* The Modal (background) */
@@ -340,13 +507,6 @@ hr {
   display: table;
 }
 
-/* Change styles for cancel button and delete button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .deletebtn {
-    width: 100%;
-  }
-}
-
 @media (max-width: 700px) {
   .container {
     -webkit-box-orient: vertical;
@@ -354,11 +514,35 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .left {
+  .container .leftContainer {
     width: 100%;
   }
   .container .right {
     width: 100%;
+  }
+  .container .right .mobileContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .right .mobileContainer .left {
+    width: 100%;
+  }
+  .container .right .mobileContainer .right {
+    width: 100%;
+  }
+  .container .right .mobileContainer .mobile {
+    width: 55%;
+    height: 400px;
+  }
+  .container .right .desktopLeg .leg1 {
+    width: 20px;
+    height: 50px;
+  }
+  .container .right .desktopLeg .leg2 {
+    width: 150px;
+    height: 10px;
   }
   .container .right form {
     width: 100%;
@@ -366,13 +550,23 @@ hr {
   .container .right form .field {
     width: 100%;
   }
+  .container .right form .field input {
+    width: 50%;
+  }
+  .container .right form .field label {
+    width: 50%;
+  }
+  .container .right form .field textarea {
+    width: 50%;
+  }
   .whatsapp-icon {
     margin-top: 10px;
+    margin-left: 5px;
   }
   .whatsapp_float {
     width: 40px;
     height: 40px;
-    bottom: 20px;
+    bottom: 40px;
     right: 10px;
     font-size: 22px;
   }

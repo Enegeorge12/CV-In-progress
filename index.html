@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="left">
+        <div class="leftContainer">
             <div class="contact"></div>
             <div class="skils">
-                <h3>Skills:</h3>
+                <h3><i class="fa fa-gears"></i>Skills:</h3>
                 <p>Html</p>
                 <progress max="100" value="90"></progress>
                 <p>Css<p>
@@ -34,28 +34,105 @@
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Experience')"><i class="fa fa-briefcase"></i>Experience</button>
                 <button class="tablinks" onclick="openTab(event, 'study')"><i class="fa fa-mortar-board"></i>Study</button>
-                <button class="tablinks" onclick="openTab(event, 'Contact')"><i class="fa fa-envelope"></i></i>Contact</button>
+                <button class="tablinks" onclick="openTab(event, 'Contact')"><i class="fa fa-envelope"></i>Contact</button>
                 <button class="tablinks" onclick="openTab(event, 'Project')"><i class="fa fa-bar-chart-o"></i>Project</i></button>
               </div>
               
               <div id="Experience" class="tabcontent"></div>
               <div id="study" class="tabcontent"></div>
-              <div id="Project" class="tabcontent"></div>
+              <div id="Project" class="tabcontent">
+                  <div class="project"><h1>Project #1</h1>
+                     <h5><i class="fa fa-comment"></i>Ethic Wine is a project I worked on personally, it can be found in my GitHub portfolio, it is an online wine store, you have to create an account to access the store. </h5>
+                     <ul><i class="fa fa-database"></i> <strong> Has different functionalities:</strong>
+                         <li>Create and validate account</li>
+                         <li>Products/Json</li>
+                         <li>Product filtering</li>
+                         <li>Product sorting</li>
+                         <li>Animations</li>
+                         <li>Dome manipulation</li>
+                        </ul>
+                <p ><i class="fa fa-map-pin"></i><strong> Link: </strong><a href="https://enegeorge12.github.io/E-commerce-in-progress/" target="_blank"><img  src="ethicLogo.png" width="100px" alt=""></a></p>
+                
+                  <div class="desktopContainer">
+                      <h3>Desktop</h3>
+                    <div class="desktop">
+                        <img src="2022-05-30 (9).png"  alt="">
+                        <span><i class="fa fa-apple"></i></span>
+                    </div>
+                    <div class="desktopLeg">
+                        <div class="leg1"></div>
+                        <div class="leg2"></div>
+                     </div>
+                 </div>
+                    <div class="mobileContainer">
+                        <div class="left">
+                            <h1>Mobile</h1>
+                            <ul><i class="fa fa-mobile-phone"></i><strong> Responsive Web Design :</strong> </ul>
+                            <li>Media Queries </li>
+                            <li>FlexBox</li>
+                            <li>Grid</li>
+                            
+                        </div>
+                        <div class="right">
+                            <div class="mobile">
+                                <div class="mobileCam"></div>
+                                <img src="2022-05-30 (10).png" alt="">
+                            </div>
+                        </div>  
+                        </div>
+                    </div>
+                        <div class="project"><h1>Project #2</h1>
+                            <ul><i class="fa fa-laptop"></i><strong> Windows Landing Page:</strong> 
+                            <li>Javascript</li>
+                            <li>FlexBox</li>
+                            <li>Grid</li>
+                        </ul>
+                            <p><i class="fa fa-map-pin"></i><strong> Link: </strong><a href="https://enegeorge12.github.io/Windows-Landing-Page/" target="_blank">Click Here!</a></p>
+                            <div class="desktopContainer">
+                                <h3>Only Desktop Screen</h3>
+                              <div class="desktop">
+                                  <img src="2022-05-30 (15).png"alt="windowsImg">
+                                  <span><i class="fa fa-apple"></i></span>
+                              </div>
+                              <div class="desktopLeg">
+                                  <div class="leg1"></div>
+                                  <div class="leg2"></div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="project"><h1>Project #3</h1>
+                            <ul><i class="fa fa-align-justify"></i>To Do List:
+                                <li>Javascript</li>
+                                <li>Dom manipulation</li>
+                            </ul>
+                            <p><i class="fa fa-map-pin"></i><strong> Link: </strong><a href="https://enegeorge12.github.io/ToDoList/" target="_blank">Click Here!</a></p>
+                            <div class="desktopContainer">
+                              <div class="desktop">
+                                  <img src="2022-05-30 (21).png"alt="ToDoListImg">
+                                  <span><i class="fa fa-apple"></i></span>
+                              </div>
+                              <div class="desktopLeg">
+                                  <div class="leg1"></div>
+                                  <div class="leg2"></div>
+                               </div>
+                           </div>
+                        </div>
+               </div>
               <div id="Contact" class="tabcontent">
                 
                 <section>
-                    <form onsubmit=" sendEmail(); reset();return false;">
+                    <form action="https://formsubmit.co/ene.2456@gmail.com" method="POST">
                         <div class="field">
                             <label >Name:</label>
-                             <input type="text" name="name" placeholder="Name" id="name">
+                             <input type="text" name="name" placeholder="Name" id="name" required>
                         </div>
                         <div class="field">
                             <label >Email:</label>
-                            <input type="text" name="name" placeholder="Email" id="email">
+                            <input type="text" name="name" placeholder="Email" id="email" required >
                         </div>
                         <div class="field">
                             <label >Description:</label>
-                             <textarea placeholder="Text Me...." name="description" id="description" cols="21" rows="3"></textarea>
+                             <textarea placeholder="Text Me...." name="description" id="description" cols="21" rows="3" required></textarea>
                         </div>
                         <button type="submit"onclick="document.getElementById('id01').style.display='block'" >Send</button>        
                     </form>
@@ -64,8 +141,8 @@
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
                     <form class="modal-content" >
                       <div class="containerModal">
-                        <h1>Your message has been received!</h1>
-                        <p>Thank you!</p>
+                        <h1>Loading....</h1>
+                        <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
                       </div>
                     </form>
                   </div>
