@@ -1,3 +1,38 @@
+.whatsapp_float {
+  position: fixed !important;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+  margin-left: 5px;
+}
+
+@media (max-width: 700px) {
+  .contact-whatsapp .whatsapp-icon {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .contact-whatsapp .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 40px;
+    right: 20px;
+    font-size: 22px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,6 +69,18 @@ body {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 10px;
+}
+
+.container .leftContainer .contactDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .container .leftContainer .hero {
@@ -102,6 +149,13 @@ body {
   width: 100%;
 }
 
+.container #Project a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .container #Project li {
   list-style: none;
   position: relative;
@@ -148,14 +202,13 @@ body {
   width: 90%;
 }
 
-.container .desktopContainer .desktop i {
+.container .desktopContainer .desktop span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 10px;
 }
 
 .container .desktopContainer .desktop img {
@@ -249,13 +302,6 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.container a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  margin-left: 10px;
 }
 
 .container .right {
@@ -394,7 +440,7 @@ button {
   padding: 14px 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /* Change background color of buttons on hover */
@@ -413,27 +459,6 @@ button {
   padding: 6px 12px;
   border-top: none;
   background-color: white;
-}
-
-.whatsapp_float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  -webkit-box-shadow: 2px 2px 3px #999;
-          box-shadow: 2px 2px 3px #999;
-  z-index: 1;
-}
-
-.whatsapp-icon {
-  margin-top: 16px;
-  margin-left: 5px;
 }
 
 /* Add a color to the delete button */
@@ -520,6 +545,10 @@ hr {
   .container .right {
     width: 100%;
   }
+  .container .right .tab {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .container .right .mobileContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -535,6 +564,9 @@ hr {
   .container .right .mobileContainer .mobile {
     width: 55%;
     height: 400px;
+  }
+  .container .right .desktop {
+    width: 100%;
   }
   .container .right .desktopLeg .leg1 {
     width: 20px;
@@ -558,17 +590,6 @@ hr {
   }
   .container .right form .field textarea {
     width: 50%;
-  }
-  .whatsapp-icon {
-    margin-top: 10px;
-    margin-left: 5px;
-  }
-  .whatsapp_float {
-    width: 40px;
-    height: 40px;
-    bottom: 40px;
-    right: 10px;
-    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */

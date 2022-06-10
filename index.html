@@ -15,6 +15,7 @@
     <div class="container">
         <div class="leftContainer">
             <div class="contact"></div>
+            <div class="contactDetails"></div>
             <div class="skils">
                 <h3><i class="fa fa-gears"></i>Skills:</h3>
                 <p>Html</p>
@@ -28,6 +29,7 @@
                 <p>Git</p>
                 <progress max="100" value="90">Html</progress>
          </div>
+         
         </div>
 
         <div class="right">
@@ -35,7 +37,7 @@
                 <button class="tablinks" onclick="openTab(event, 'Experience')"><i class="fa fa-briefcase"></i>Experience</button>
                 <button class="tablinks" onclick="openTab(event, 'study')"><i class="fa fa-mortar-board"></i>Study</button>
                 <button class="tablinks" onclick="openTab(event, 'Contact')"><i class="fa fa-envelope"></i>Contact</button>
-                <button class="tablinks" onclick="openTab(event, 'Project')"><i class="fa fa-bar-chart-o"></i>Project</i></button>
+                <button class="tablinks" onclick="openTab(event, 'Project')"><i class="fa fa-bar-chart-o"></i>Portfolio</i></button>
               </div>
               
               <div id="Experience" class="tabcontent"></div>
@@ -121,6 +123,7 @@
               <div id="Contact" class="tabcontent">
                 
                 <section>
+                    
                     <form action="https://formsubmit.co/ene.2456@gmail.com" method="POST">
                         <div class="field">
                             <label >Name:</label>
@@ -134,7 +137,7 @@
                             <label >Description:</label>
                              <textarea placeholder="Text Me...." name="description" id="description" cols="21" rows="3" required></textarea>
                         </div>
-                        <button type="submit"onclick="document.getElementById('id01').style.display='block'" >Send</button>        
+                        <button type="submit"onclick="document.getElementById('id01').style.display='block'" >Send Email</button>        
                     </form>
                 </section>
                 <div id="id01" class="modal">
@@ -149,8 +152,8 @@
               </div>
         </div>
     </div>
-    <i class="fas fa-clock"></i>
+    <div class="contact-whatsapp">
     <a href="https://wa.me/+40767316198" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-    
+</div>
 </body>
 </html>

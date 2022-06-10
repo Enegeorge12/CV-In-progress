@@ -1,0 +1,37 @@
+[
+{
+    "company":"Tasting room",
+    "ocupation":"Chef",
+    "activity":"Public Alimentation and Tourism",
+    "experience":"2014-2022",
+    "link":"http://tastingroom.ro/",
+    "img":"logo_tasting_room_mic.png",
+    "description":"I was a chef and restaurant manager, I take care of the organization of the team, the quality of the products, we hire the right people for the development of the team and the company."
+},
+{
+    "company":"Luna Cafe & Bistro",
+    "ocupation":"Chef",
+    "link":"https://cafeluna.ro/",
+    "activity":"Public Alimentation and Tourism",
+    "experience":"septembrie 2013 - ianuarie 2014",
+    "img":"3.luna_logo-1.png",
+    "description":""
+},
+{
+    "company":"Ads New Solution",
+    "ocupation":"Chef",
+    "activity":"Public Alimentation and Tourism",
+    "experience":"februarie 2010 - septembrie 2013 ",
+    "description":""
+},
+{
+    "company":"RIN Group",
+    "ocupation":"Helper Kitchen",
+    "link":"https://www.ringroup.ro/",
+    "activity":"Public Alimentation and Tourism",
+    "experience":"septembrie 2009 - februarie 2010 (",
+    "description":"",
+    "img":"logo-RIN-Group3.png"
+}
+
+]
