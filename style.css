@@ -71,6 +71,78 @@ body {
   padding: 10px;
 }
 
+.container .leftContainer .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.container .leftContainer form {
+  display: none;
+}
+
+.container .leftContainer form button[type="submit"] {
+  border: none;
+  background-color: cadetblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .leftContainer form button[type="submit"]:hover {
+  letter-spacing: 0.35em;
+}
+
+.container .leftContainer form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.container .leftContainer form .field:first-child {
+  margin-top: 30px;
+}
+
+.container .leftContainer form .field input {
+  padding: 5px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+.container .leftContainer form .field textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
 .container .leftContainer .contactDetails {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,24 +405,7 @@ body {
           align-items: center;
 }
 
-.container .right form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-
-.container .right form .field {
+.sendEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,47 +413,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40%;
-}
-
-.container .right form .field:first-child {
+  border-bottom: 1px solid black;
   margin-top: 30px;
-}
-
-.container .right form .field input {
-  padding: 5px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid black;
-  width: 50%;
-}
-
-.container .right form .field textarea {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid black;
-  width: 50%;
-}
-
-button[type="submit"] {
-  border: none;
-  background-color: cadetblue;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-button[type="submit"]:hover {
-  letter-spacing: 0.35em;
 }
 
 button {
@@ -409,6 +428,13 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.fa-rotate {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
 }
 
 .fa {
@@ -580,13 +606,23 @@ hr {
     width: 100%;
   }
   .container .right form .field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
   }
   .container .right form .field input {
-    width: 50%;
+    width: 100%;
   }
   .container .right form .field label {
-    width: 50%;
+    width: 100%;
   }
   .container .right form .field textarea {
     width: 50%;

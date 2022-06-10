@@ -29,14 +29,42 @@
                 <p>Git</p>
                 <progress max="100" value="90">Html</progress>
          </div>
-         
+         <div class="sendEmail" onclick="activForm()">
+            <div><i class="fa fa-envelope"></i>Send Email</div>
+             <i class="fa fa-angle-down"></i></div>
+         <section class="form" >         
+            <form action="https://formsubmit.co/ene.2456@gmail.com" method="POST">
+                <div class="field">
+                    <label >Name:</label>
+                     <input type="text" name="name" placeholder="Name" id="name" required>
+                </div>
+                <div class="field">
+                    <label >Email:</label>
+                    <input type="text" name="name" placeholder="Email" id="email" required >
+                </div>
+                <div class="field">
+                    <label >Description:</label>
+                     <textarea placeholder="Text Me...." name="description" id="description" cols="21" rows="3" required></textarea>
+                </div>
+                <button type="submit"onclick="document.getElementById('id01').style.display='block'" >Send Email</button>        
+            </form>
+        </section>
         </div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            <form class="modal-content" >
+              <div class="containerModal">
+                <h1>Loading....</h1>
+                <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+              </div>
+            </form>
+          </div>
 
         <div class="right">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Experience')"><i class="fa fa-briefcase"></i>Experience</button>
                 <button class="tablinks" onclick="openTab(event, 'study')"><i class="fa fa-mortar-board"></i>Study</button>
-                <button class="tablinks" onclick="openTab(event, 'Contact')"><i class="fa fa-envelope"></i>Contact</button>
+                
                 <button class="tablinks" onclick="openTab(event, 'Project')"><i class="fa fa-bar-chart-o"></i>Portfolio</i></button>
               </div>
               
@@ -120,36 +148,6 @@
                            </div>
                         </div>
                </div>
-              <div id="Contact" class="tabcontent">
-                
-                <section>
-                    
-                    <form action="https://formsubmit.co/ene.2456@gmail.com" method="POST">
-                        <div class="field">
-                            <label >Name:</label>
-                             <input type="text" name="name" placeholder="Name" id="name" required>
-                        </div>
-                        <div class="field">
-                            <label >Email:</label>
-                            <input type="text" name="name" placeholder="Email" id="email" required >
-                        </div>
-                        <div class="field">
-                            <label >Description:</label>
-                             <textarea placeholder="Text Me...." name="description" id="description" cols="21" rows="3" required></textarea>
-                        </div>
-                        <button type="submit"onclick="document.getElementById('id01').style.display='block'" >Send Email</button>        
-                    </form>
-                </section>
-                <div id="id01" class="modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-                    <form class="modal-content" >
-                      <div class="containerModal">
-                        <h1>Loading....</h1>
-                        <i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
-                      </div>
-                    </form>
-                  </div>
-              </div>
         </div>
     </div>
     <div class="contact-whatsapp">

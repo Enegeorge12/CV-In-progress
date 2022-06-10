@@ -185,7 +185,7 @@ function creatExperience(){
     let titleCompany=document.createElement("h3")
     titleCompany.textContent="Company: "+user.company
     let linkCompany=document.createElement("a")
-    linkCompany.innerHTML=`<i class="fa fa-map-pin"></i>Link: `
+    linkCompany.textContent=`Link:  `+user.link
     linkCompany.href=user.link
     linkCompany.style.textDecoration="none"
     linkCompany.style.color="black"
@@ -194,6 +194,7 @@ function creatExperience(){
     linkCompany.style.justifyContent="space-between"
     let imgCompany=document.createElement("img")
     imgCompany.src=user.img
+    imgCompany.style.backgroundColor="black"
     imgCompany.setAttribute("width","100px")
     
     let yearexp=document.createElement("p")
@@ -215,4 +216,19 @@ function creatExperience(){
     section.appendChild(description)
   }
 
+}
+
+function activForm() {
+  let clickDiv=document.querySelector("form")
+  let icon = document.querySelector(" .fa-angle-down");
+  if (clickDiv.style.display === "none") {
+    icon.classList.add("fa-rotate");
+    clickDiv.style.display = "flex";
+    clickDiv.style.flexDirection="column"
+    clickDiv.classList.add("form")
+    
+  } else {
+    clickDiv.style.display = "none";
+    icon.classList.remove("fa-rotate");
+  }
 }
