@@ -185,7 +185,7 @@ function creatExperience(){
     let titleCompany=document.createElement("h3")
     titleCompany.textContent="Company: "+user.company
     let linkCompany=document.createElement("a")
-    linkCompany.textContent=`Link:  `+user.link
+    linkCompany.innerHTML=`Link:  `
     linkCompany.href=user.link
     linkCompany.style.textDecoration="none"
     linkCompany.style.color="black"
